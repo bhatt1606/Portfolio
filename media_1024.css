@@ -1,0 +1,136 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    font-size: 20px;
+  }
+
+  #body-header {
+    height: 52vh;
+  }
+
+  .nav-link {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+
+  /* about.................................................. */
+  #about {
+    margin: 1rem 3rem;
+    display: flex;
+  }
+
+  #about-paragraph p,
+  span {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  #my-image {
+    margin-top: -5vh;
+  }
+
+  /* education............................................. */
+  #education {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: #afafa536;
+  }
+
+  .tbox {
+    width: auto;
+    min-width: 18rem;
+    max-width: 25rem;
+    min-height: 11rem;
+    margin: 1rem 0rem;
+    padding: 2px;
+    position: relative;
+    text-align: right;
+    background-color: #f6f6f687;
+    box-shadow: 4px 6px 10px darkgrey;
+  }
+
+  .left {
+    left: 0%;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .my_details {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .tlogo {
+    margin-right: 1rem;
+    margin-top: 0rem;
+  }
+
+  .tlogo img {
+    width: 3em;
+  }
+
+  .timeline {
+    margin: 0;
+    width: auto;
+    display: contents;
+  }
+
+  .degree-course {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .institution-name {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .course-duration {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  .course-description {
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+
+  .timeline-details {
+    margin: 2rem 2.2rem 1rem 1rem;
+    display: inline-flex;
+    padding: 0.1rem;
+  }
+
+  .fas {
+    font-size: 1.5rem;
+  }
+
+  /* portfolio.............................................. */
+  .portfolio-container {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .portfolio-image-container {
+    margin: 1.5rem;
+  }
+
+  .portfolio-image-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* contact................................................ */
+.form-control {
+  min-width: 12rem;
+}
+
+.btn-primary {
+  margin-left: 27%;
+}

@@ -1,0 +1,167 @@
+@media screen and (min-width: 1025px) and (max-width: 1370px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  /* Body Header.............................................. */
+  #body-header {
+    height: 72vh;
+  }
+
+  /* about................................................... */
+  #about {
+    margin: 0.2rem 4rem;
+    display: flex;
+  }
+
+  #my-image {
+    height: 8rem;
+    width: 8rem;
+    margin: auto;
+    margin-top: -10vh;
+  }
+
+  /* education.............................................. */
+  .tbox {
+    min-width: 14rem;
+    min-height: 8rem;
+    max-width: 18rem;
+    max-height: 15rem;
+  }
+
+  .fas {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .left {
+    left: 2rem;
+  }
+
+  .right {
+    left: 17rem;
+  }
+
+  .timeline {
+    width: 90%;
+  }
+
+  .my_details {
+    font-size: 0.8rem;
+    text-align: end;
+  }
+
+  .degree-course {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+
+  .institution-name {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+  }
+
+  .course-duration {
+    font-size: 0.52em;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .course-description {
+    font-size: 0.55em;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .tlogo {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .tlogo img {
+    width: 2.5em;
+  }
+
+  .school-icon {
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+  }
+
+  /* portfolio.............................................. */
+
+  .portfolio-details p a {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  /* contact................................................ */
+  .form-control {
+    max-width: 80%;
+    min-width: 60%;
+    /* min-width: 12rem; */
+    min-height: 1.5rem;
+    font-size: 0.6rem;
+    margin: 0.6rem;
+    padding: 0 1rem;
+  }
+
+  .btn-primary {
+    font-size: 0.5rem;
+    width: 5rem;
+    height: 1.3rem;
+    margin-top: 5%;
+    margin-left: 28%;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+  }
+
+  .btn-primary a {
+    font-size: 0.5rem;
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+  }
+
+  .my-details-container h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0rem;
+  }
+
+  .my-details-container p {
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .my-contact-details span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .my-contact-details a {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .fa {
+    font-size: 0.8rem;
+    margin: 0rem 0.2rem;
+  }
+}

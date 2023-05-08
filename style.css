@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Montserrat:wght@200&family=Sigmar:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Braah+One&family=Bruno+Ace&family=Bruno+Ace+SC&family=Lora:wght@600&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: "Bruno Ace SC", cursive;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Body Header................................................ */
+#body-header {
+  height: 72vh;
+  opacity: 1;
+  background-image: url(back1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 0.2rem;
+}
+
+/* sidebar................................................... */
+.sidebar {
+  position: absolute;
+  height: 41vh;
+  background-color: black;
+  transition: transform 0.1s ease-in;
+}
+
+.sidebar nav {
+  padding: 1rem 1rem;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 1rem 0 0 0;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebarGo {
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 1rem;
+  left: 0.7rem;
+}
+
+.ham {
+  display: inline;
+  margin-left: 0.5rem;
+  width: 1.5rem;
+  background-color: white;
+}
+
+.cross {
+  margin-left: 8.5rem;
+  width: 1.5rem;
+  background-color: white;
+}
+
+@media screen and (min-width: 610px) {
+  .sidebar,
+  .hamburger {
+    display: none;
+  }
+}
+/* sidebar.................................................. */
+
+/* navbar................................................... */
+.navbar {
+  margin: 0.5rem;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  /* color: black ; */
+  display: block;
+}
+
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-item:hover {
+  box-shadow: 0px 0px 9px #f0eded;
+  background-color: black;
+}
+
+.nav-link {
+  font-size: 0.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 610px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* name-social-container...................................... */
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+#my-name {
+  color: white;
+  font-size: 3rem;
+}
+
+.name-social-container {
+  margin-top: 5rem;
+}
+
+.social-icons {
+  margin: 1rem;
+}
+
+.social-icons ul {
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+  background-color: #b58181;
+}
+
+.social-icons li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.social-icons li a {
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  text-decoration: none;
+}
+
+ion-icon {
+  color: white;
+  height: 1rem;
+  width: 1rem;
+}
+
+/* about....................................................... */
+#about {
+  margin: 0.2rem 5rem;
+  display: flex;
+  /* background-color: #d2c5c5; */
+}
+
+#my-image {
+  height: 7rem;
+  width: 7rem;
+  margin: auto;
+  margin-top: -10vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: rgb(47 46 46) 4px 7px 7px 1px;
+}
+
+#about-paragraph {
+  padding: 0.4rem;
+  color: black;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#about-paragraph p,
+span {
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.text-highlight {
+  color: #0c4075;
+  font-weight: 500;
+}
+
+/* education............................................... */
+.section-heading {
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.section-heading span {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+#education {
+  /* font-size: 30px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
+  background-color: #afafa536;
+}
+
+.tbox {
+  margin: 1rem 0.2rem;
+  padding: 0.1rem;
+  width: 35%;
+  position: relative;
+  text-align: right;
+  min-width: 15rem;
+  min-height: 8rem;
+  background-color: #f6f6f687;
+  box-shadow: 4px 6px 10px darkgrey;
+}
+
+.fas {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.timeline {
+  margin: 0.5rem 0rem;
+  width: 80%;
+  position: relative;
+}
+
+.timeline-details {
+  margin: 1.5rem 2rem 1rem 1rem;
+  display: inline-flex;
+  padding: 0.1rem;
+}
+
+.my_details {
+  font-size: 0.8rem;
+  text-align: end;
+}
+
+.degree-course {
+  font-size: 1.2em;
+  color: #014c4e;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.institution-name {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #111190;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+.course-duration {
+  font-size: 0.6em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.course-description {
+  font-size: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.left {
+  left: 5rem;
+}
+
+.right {
+  left: 20rem;
+}
+
+.tlogo {
+  margin-right: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.tlogo img {
+  width: 3em;
+}
+
+.school-icon {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* skills.................................................. */
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding-bottom: 2rem;
+  /* background-color: #d2c5c5; */
+}
+
+.skill-display {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.skill-progress {
+  width: 8rem;
+  height: 1.5rem;
+  background-color: #e3e3e3;
+  border-radius: 1.5rem;
+  box-shadow: 6px 3px 6px 2px #c6c0c0 inset;
+  margin: 1.5rem;
+  overflow: hidden;
+}
+
+.skill-progress > div {
+  box-shadow: 3px 0px 13px 1px;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.skill-name span {
+  vertical-align: middle;
+  margin-left: 0.75rem;
+  color: whitesmoke;
+  font-size: 0.65rem;
+}
+
+.eighty-percent {
+  height: inherit;
+  width: 80%;
+}
+
+.seventy-five-percent {
+  height: inherit;
+  width: 75%;
+}
+
+.seventy-percent {
+  height: inherit;
+  width: 70%;
+}
+
+.sixty-five-percent {
+  height: inherit;
+  width: 65%;
+}
+
+.sixty-percent {
+  height: inherit;
+  width: 60%;
+}
+
+.mb-blue {
+  background-color: #081370bd;
+}
+
+.mb-green {
+  background-color: #1d6b18;
+}
+
+.mb-violet {
+  background-color: #a72d71;
+}
+
+.mb-teal {
+  background-color: #237575;
+}
+
+.mb-red {
+  background-color: #ba1b1bed;
+}
+
+.mb-orange {
+  background-color: #f15400;
+}
+
+.mb-yellow {
+  background-color: #8d8d0f;
+}
+
+/* portfolio................................................ */
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: #afafa536;
+}
+
+.portfolio-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding: 0rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-image-container {
+  margin: 1rem;
+  max-width: 8rem;
+  position: relative;
+  background-size: cover;
+  cursor: pointer;
+  border: 3px solid #3c3939bd;
+}
+
+.portfolio-details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  transition: 0.4s ease;
+  background-color: #18161669;
+  overflow: hidden;
+  box-shadow: 4px 5px 13px darkslategrey;
+}
+
+.portfolio-details p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio-details p a {
+  color: #ffffff;
+  font-size: 0.7rem;
+  text-decoration: none;
+  /* font-weight: 400; */
+  font-family: "Lora", serif;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+  transform: scale(1);
+}
+
+/* contact.................................................. */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0rem;
+  padding: 0.5rem 0rem;
+  /* background-color: #d2c5c5; */
+  background-image: url("contact1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-container {
+  display: flex;
+  margin-bottom: 2%;
+  margin-top: 0.4rem;
+}
+
+.contact-form-container {
+  width: 50%;
+}
+
+.my-details-container {
+  width: 50%;
+  margin-left: 1%;
+  font-family: "Bruno Ace", cursive;
+}
+
+.contact-form {
+  margin-left: 15%;
+}
+
+.btn-primary {
+  font-size: 0.5rem;
+  margin-top: 5%;
+  margin-left: 35%;
+  border-radius: 2px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.8em 0.8em 0.78em;
+  text-transform: uppercase;
+  background-color: #337df1;
+  box-shadow: 2px 4px 5px 2px #5f5656;
+}
+
+.form-control {
+  max-width: 90%;
+  min-height: 1.5rem;
+  font-size: 0.6rem;
+  font-family: cursive;
+  color: blue;
+  margin: 0.6rem;
+  padding: 0 1rem;
+  border: 0px solid transparent;
+  box-shadow: 5px 3px 5px 1px darkgrey inset;
+  border-radius: 0.2rem 1.5rem;
+  background-color: #f9f9f9;
+  min-width: 15rem;
+}
+
+.btn-primary a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-style: italic;
+  font-family: serif;
+  font-size: 0.5rem;
+}
+
+.my-details-container h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #150a5ad4;
+  margin-bottom: 0rem;
+  font-family: "Braah One", sans-serif;
+}
+
+.my-details-container p {
+  font-size: 0.8rem;
+  font-family: monospace;
+  margin-bottom: 1rem;
+}
+
+.my-contact-details span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #115380;
+}
+
+.my-contact-details a {
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: cursive;
+  color: #115380;
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 0.8rem;
+}
+
+.ion-icon-bottom {
+  color: black;
+}
+
+.fa {
+  margin: 0rem 0.2rem;
+}
+
+ion-icon:hover {
+  opacity: 0.8;
+  background-color: black;
+  color: whitesmoke;
+  box-shadow: 0px 0px 18px #978e8e;
+  border-radius: 0.5rem;
+}
+
+.footer_bottom {
+  margin: 0.5rem 0rem;
+}
+
+.footer_bottom p,
+a {
+  font-size: 0.6rem;
+  margin: 0;
+  text-decoration: none;
+}
+
+.footer_bottom span {
+  font-size: 0.8rem;
+}
+
+.footer_bottom img {
+  width: 0.6rem;
+}
